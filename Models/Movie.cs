@@ -1,7 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-public class Movie
+namespace MvcMovie.Models
+{
+    public class Movie
 {
     public int Id { get; set; }
 
@@ -22,3 +24,6 @@ public class Movie
     [Required, StringLength(5)]
     public string Rating { get; set; } = string.Empty;
 }
+}
+
+
